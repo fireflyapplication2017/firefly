@@ -1,0 +1,12 @@
+AIzaSyA2kN3N_RXKjqvUBxW4VetfvBZzuKc4c58
+
+
+function getData() {
+    $.getJSON("new_json_file.json", function (data) {
+        $.each(data, function (i, item) {
+            //Here I am working on the data
+        });
+        setTimeout(getData, 300000);
+    });
+}
+getData(); // run once to start it
